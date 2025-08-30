@@ -1,0 +1,23 @@
+output of algo_ASA
+
+1. After running account.py
+
+A/C address:-OQBPMCZA6IYWU7JC55XJEEE6M2A5R6CW5G2IGPRH4ZEMTRX67KERYNNJZU
+
+My passphrase: model print vapor toddler laugh knock rescue drum seed critic month frozen seek ceiling matrix kitchen brief dentist dwarf issue piece honey similar abandon bus
+
+It ask to fund the account from algorand dispenser. Once that is done we can create asset.
+
+2.After running assetcreate.py
+output:-
+Connecting to Algorand Testnet
+Creating the Token Metadata
+Waiting for confirmation...
+Token deployed. Asset ID: 745028568
+Asset URL: https://lora.algokit.io/testnet/asset/745028568
+3. After running atomictxn.py (Changes: Need to mention sender account passphrase and receiver account passphrase, also need to mention asset-id in "Index" in opt-in function.
+asset_opt_in_tx = AssetOptInTxn(
+    sender=receiver_wallet.address, index=745028568, sp=trans_params
+)
+output:-
+Transaction ID: JTGFY6OL75O6L5XNOV4BE25HWKDZXHMLZE7IKRC4M4VLGACIMVKA
